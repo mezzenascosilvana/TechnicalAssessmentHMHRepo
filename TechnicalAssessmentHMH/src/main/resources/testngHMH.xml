@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="HMH_Common Test Suite">
+
+
+	<parameter name="searchString" value="cities" />
+	<listeners>
+		<listener class-name="common.Listeners" />
+	</listeners>
+
+	<test name="Automation Positive Tests">
+		<classes>
+			<class name="common.cities.CitiesPositiveScenariosTest" />
+			<class
+				name="common.collections.CollectionsPositiveScenariosTest" />
+			<class name="common.cuisines.CuisinesPositiveScenariosTest" />
+			<class name="common.categories.CategoriesTest" />
+		</classes>
+	</test> <!-- Automation Positive Tests -->
+
+	<test name="Automation Negative Tests">
+		<classes>
+			<class name="common.cities.CitiesNegativeScenariosTest" />
+			<class
+				name="common.collections.CollectionsNegativeScenariosTest" />
+			<class name="common.cuisines.CuisinesNegativeScenariosTest" />
+		</classes>
+	</test><!-- Automation Negative Tests -->
+
+
+</suite> <!-- HMH_Common Test Suite -->
